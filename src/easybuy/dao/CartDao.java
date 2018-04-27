@@ -1,22 +1,22 @@
 package easybuy.dao;
-
+//2018-4-27
 import java.util.List;
 
 import easybuy.entity.Cart;
 
 public interface CartDao {
-	// ¸ù¾İÓÃ»§id²éÑ¯¹ºÎï³µĞÅÏ¢
+	// æ ¹æ®ç”¨æˆ·idæŸ¥è¯¢è´­ç‰©è½¦ä¿¡æ¯
 	public List<Cart> query(String userid);
 
-	// ÎªÄ³¸öÓÃ»§Ôö¼Ó¹ºÎï³µĞÅÏ¢£¨ÒÑ¾­´æÔÚºÍ²»´æÔÚ£©
+	// ä¸ºæŸä¸ªç”¨æˆ·å¢åŠ è´­ç‰©è½¦ä¿¡æ¯ï¼ˆå·²ç»å­˜åœ¨å’Œä¸å­˜åœ¨ï¼‰
 	public int add(Cart c);
 
-	// ĞŞ¸ÄÄ³¼şÉÌÆ·ÊıÁ¿£¨Í¬Ê±¼Û¸ñÒ²Òª¸ú×Å±ä£©
+	// ä¿®æ”¹æŸä»¶å•†å“æ•°é‡ï¼ˆåŒæ—¶ä»·æ ¼ä¹Ÿè¦è·Ÿç€å˜ï¼‰
 	public int update(Cart c);
 
-	// É¾³ıÄ³¼şÉÌÆ·ĞÅ
+	// åˆ é™¤æŸä»¶å•†å“ä¿¡
 	public int deleteid(String userid, int shopid);
 
-	// Çå¿Õ¹ºÎï³µ
+	// æ¸…ç©ºè´­ç‰©è½¦
 	public int deleteuserid(String userid);
 }
